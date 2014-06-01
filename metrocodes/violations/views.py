@@ -101,7 +101,7 @@ def start():
         violation_types.add(violation.reported_problem)
         series[month][violation.reported_problem] = violation.count
 
-    for month in months[0:6]:
+    for month in months[0:3]:
         for violation_type in violation_types:
             if series[month].get(violation_type):
                 prep_agg[violation_type].append(series[month][violation_type])
