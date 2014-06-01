@@ -24,7 +24,7 @@ def violations():
     return json.dumps(violation_list)
 
 @mod.route('/thing', methods=['GET', ])
-def login():
+def thing():
     violations = db.session.query(
         Violation.reported_problem,
         label('year', func.date_part('year', Violation.date_recieved)),
@@ -70,7 +70,7 @@ def login():
     return render_template('violations/index.html', months=months, series=series)
 
 @mod.route('/start', methods=['GET', ])
-def login():
+def start():
     violations = db.session.query(
         Violation.reported_problem,
         label('year', func.date_part('year', Violation.date_recieved)),
