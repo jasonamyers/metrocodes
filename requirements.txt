@@ -9,10 +9,14 @@ WTForms==1.0.5
 Werkzeug==0.9.4
 elpy==1.4.1
 flake8==2.1.0
+gunicorn==18.0
+ipython==2.1.0
 itsdangerous==0.24
 mccabe==0.2.1
 pep8==1.5.7
 psycopg2==2.5.3
 pyflakes==0.8.1
+python-dateutil==2.2
 rope==0.10.2
+six==1.6.1
 wsgiref==0.1.2
